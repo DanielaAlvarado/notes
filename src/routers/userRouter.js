@@ -1,6 +1,6 @@
 const express = require('express');
 const binder = require('./binder');
-const User = require('../models/User');
+const User = require('../models/user');
 const storeUser = require('../validators/storeUser');
 const userController = require('../controllers/userController');
 const loginUser = require('../validators/loginUser');
