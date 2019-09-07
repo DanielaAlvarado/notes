@@ -21,7 +21,7 @@ test('should sign up new user', async () => {
         expect(201);
 
     const user = await User.query().findById(response.body.user.id);
-    expect(user).toBeUndefined();
+    expect(user).not.toBeUndefined();
 });
 
 test('should not sign up user with invalid email', async () => {
