@@ -6,7 +6,7 @@ const User = require('../src/models/user');
 let token;
 
 beforeAll(async () => {
-    await seeder()
+    await seeder();
 });
 
 test('should sign up new user', async () => {
